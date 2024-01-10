@@ -1,13 +1,195 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <title>Название проекта</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="styles/styles.css">
-    <script src="scripts/index.js" defer></script>
-  </head>
-  <body class="page__body">
-    <header class="header">Шапка</header>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Ягода</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="scripts/index.js" defer></script>
+</head>
+
+<body class="page__body">
+  <header class="header">
+    <nav class="header__nav">
+      <div class="header__wrapper">
+        <a href="index.html" class="header__logo logo">
+          <span class="visually-hidden">
+            Ягода.
+          </span>
+        </a>
+        <button class="header__burger header__burger--no-js" type="button" aria-label="Открыть меню.">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <ul class="header__list">
+        <li class="header__item">
+          <a href="#" class="header__link">
+            Каталог
+          </a>
+        </li>
+        <li class="header__item">
+          <a href="#" class="header__link">
+            Новости
+          </a>
+        </li>
+        <li class="header__item">
+          <a href="#" class="header__link">
+            Контакты
+          </a>
+        </li>
+        <li class="header__item">
+          <a href="#" class="header__link">
+            Заказать
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main">
+    <section class="hero">
+      <div class="hero__container">
+        <h1 class="hero__title title">
+          Ягоды с доставкой
+        </h1>
+        <ul class="hero__list">
+          <li class="hero__item">
+            Отборные ягоды
+          </li>
+          <li class="hero__item">
+            Натуральный вкус сохранён методом шоковой заморозки
+          </li>
+          <li class="hero__item">
+            Доставка по Санкт-Петербургу
+          </li>
+        </ul>
+        <a href="form.html" class="hero__link btn">
+          Заказать
+        </a>
+      </div>
+    </section>
+    <section class="catalog">
+      <div class="catalog__container">
+        <h2 class="catalog__title title">
+          Каталог
+        </h2>
+        <div class="catalog__wrapper">
+          <div class="catalog__card card">
+            <a href="#" class="card__img-link">
+              <img src="" alt="Малина." class="card__img">
+            </a>
+            <h3 class="card__title">
+              <a href="#" class="card__title-link">
+                Малина
+              </a>
+            </h3>
+            <div class="card__desc">
+              <span class="card__price">
+                350 ₽
+              </span>
+              <span class="card__quantity">
+                за 1 кг
+              </span>
+            </div>
+            <a href="form.html" class="card__link btn">
+              Заказать
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="news">
+      <div class="news__container">
+        <h2 class="news__title title">
+          Что новенького?
+        </h2>
+        <div class="news__wrapper">
+          <div class="news__card news-card">
+            <h3 class="news-card__title">
+              Новый урожай клубники
+            </h3>
+            <div class="news-card__desc">
+              <p>
+                К нам поступила свежая сочная ароматная клубника
+                из Алтайского края. Крупные отборные ягоды можно приобрести свежими от 200 гр, или замороженными от 1
+                кг. Поторопитесь, сезон клубники короткий и свежие ягоды скоро закончатся.
+              </p>
+              <time class="news-card__date" datetime="2022-06-22">
+                22 июня 2022
+              </time>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <section class="contacts">
+      <div class="contacts__container">
+        <h2 class="contacts__title title">
+          Где забрать ягоды?
+        </h2>
+        <div class="contacts__desc">
+          <p>
+            Забери ягоды с нашего склада по адресу:
+          </p>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              Набережная Обводного канала, 101
+            </li>
+            <li class="contacts__item">
+              <a href="tel:+79105244118" class="contacts__link">
+                + 7 910 524 41 18
+              </a>
+            </li>
+            <li class="contacts__item">
+              <a href="mailto:info@yagoda.ru" class="contacts__link">
+                info@yagoda.ru
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="contacts__map map">
+          <img src="" alt="Набережная Обводного канала, 101." class="map__img">
+        </div>
+      </div>
+    </section>
+    <div class="footer__container">
+      <a href="index.html" class="footer__logo logo">
+        <span class="visually-hidden">
+          Ягода.
+        </span>
+      </a>
+      <ul class="social">
+        <li class="social__item">
+          <a href="#" class="social__link">
+            <span class="visually-hidden">
+              telegram.
+            </span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__link">
+            <span class="visually-hidden">
+              VK.
+            </span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__link">
+            <span class="visually-hidden">
+              YouTube.
+            </span>
+          </a>
+        </li>
+      </ul>
+      <a href="https://htmlacademy.ru/intensive/adaptive" class="footer__copyright">
+        HTML Academy
+      </a>
+    </div>
+  </footer>
+</body>
+
 </html>
