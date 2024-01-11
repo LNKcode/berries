@@ -101,7 +101,6 @@ export function optimizeRaster () {
   }
 
   return src(`${PATH_TO_RAW}images/**/*.{png,jpg,jpeg}`)
-
     .pipe(dest(`${PATH_TO_SOURCE}images`));
 }
 
