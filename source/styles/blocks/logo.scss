@@ -3,6 +3,7 @@
   display: block;
   width: 52px;
   height: 52px;
+  color: #0F805D;
 
   &::after {
     @include pseudo;
@@ -15,23 +16,61 @@
     z-index: 1;
   }
 
-  &:hover {
+  &:hover,
+  &:focus-visible {
+    color: #7BDB0A;
+
     &::after {
       background-color: #7BDB0A;
     }
   }
 
   &:active {
+    color: rgba(15, 128, 93, 0.50);
     &::after {
       background-color: rgba(15, 128, 93, 0.50);
     }
   }
+}
 
-  svg {
+.logo__img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+@media (max-width: $mobile-width-only) {
+  .logo__text {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .logo {
+    width: 135px;
+    height: 60px;
+
+    &::after {
+      width: 33px;
+      height: 14px;
+      top: 7px;
+      left: 13px;
+    }
+  }
+
+  .logo__text {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
+    top: 12px;
+    right: 0;
+  }
+
+  .logo__img {
+    width: 39px;
+    height: 48px;
+    transform: none;
+    left: 10px;
+    top: 7px;
   }
 }

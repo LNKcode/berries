@@ -10,12 +10,16 @@
 </head>
 
 <body class="page__body">
-  <header class="header header--open">
+  <header class="header header--close">
     <nav class="header__nav">
       <div class="header__wrapper">
         <a href="index.html" class="header__logo logo">
-          <svg width="36" height="44" viewBox="0 0 36 44" xmlns="http://www.w3.org/2000/svg">
+          <svg width="36" height="44" viewBox="0 0 36 44" xmlns="http://www.w3.org/2000/svg" class="logo__img">
             <use xlink:href="images/icons/stack.svg#logo"></use>
+          </svg>
+          <svg class="logo__text" width="65" height="36" viewBox="0 0 65 36" fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="images/icons/stack.svg#logo-text"></use>
           </svg>
           <span class="visually-hidden">
             Ягода.
@@ -54,9 +58,7 @@
   <main class="main">
     <section class="hero">
       <div class="hero__container container">
-        <h1 class="hero__title title">
-          Ягоды с&nbsp;доставкой
-        </h1>
+        <h1 class="hero__title title">Ягоды с&nbsp;доставкой</h1>
         <ul class="hero__list">
           <li class="hero__item hero__item--leaf">
             Отборные ягоды
@@ -82,8 +84,9 @@
           <div class="catalog__card card">
             <a href="#" class="card__img-link">
               <picture>
-                <source type="image/webp" srcset="images/raspberries.webp 1x, images/raspberries@2x.webp np2x">
-                <img src="images/raspberries.jpg" alt="Малина." class="card__img" srcset="images/raspberries@2x.jpg 2x">
+                <source type="image/webp" srcset="images/raspberries@1x.webp 1x, images/raspberries@2x.webp 2x">
+                <img src="images/raspberries@1x.jpg" alt="Малина." class="card__img"
+                  srcset="images/raspberries@2x.jpg 2x">
               </picture>
             </a>
             <div class="card__inner">
@@ -164,10 +167,12 @@
             </ul>
           </div>
         </div>
-
         <div class="contacts__map map">
-          <img src="images/map.jpg" width="320" height="372" alt="Набережная Обводного канала, 101." class="map__img"
-            srcset="images/map@2x.jpg 2x">
+          <picture>
+            <source type="image/webp" srcset="images/map@1x.webp 1x, images/map@2x.webp 2x">
+            <img src="images/map@1x.jpg" width="320" height="372" alt="Набережная Обводного канала, 101."
+              class="map__img" srcset="images/map@2x.jpg 2x">
+          </picture>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2000.132519445511!2d30.33122400000001!3d59.91334799999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469630519ea47935%3A0x3458dd62ea82672d!2z0L3QsNCx0LXRgNC10LbQvdCw0Y8g0J7QsdCy0L7QtNC90L7Qs9C-INC60LDQvdCw0LvQsCwgMTAxLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkwMDEz!5e0!3m2!1sru!2sru!4v1705240083954!5m2!1sru!2sru"
             width="320" height="372" allowfullscreen="" loading="lazy"
@@ -178,8 +183,12 @@
     <div class="footer__inner">
       <div class="footer__container container">
         <a href="index.html" class="footer__logo logo">
-          <svg width="36" height="44" viewBox="0 0 36 44" xmlns="http://www.w3.org/2000/svg">
+          <svg width="36" height="44" viewBox="0 0 36 44" xmlns="http://www.w3.org/2000/svg" class="logo__img">
             <use xlink:href="images/icons/stack.svg#logo"></use>
+          </svg>
+          <svg class="logo__text" width="65" height="36" viewBox="0 0 65 36" fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="images/icons/stack.svg#logo-text"></use>
           </svg>
           <span class="visually-hidden">
             Ягода.
@@ -208,12 +217,15 @@
             </a>
           </li>
         </ul>
-        <a href="https://htmlacademy.ru/intensive/adaptive" class="footer__copyright">
-          HTML Academy
-          <svg width="20" height="24" viewBox="0 0 20 24" xmlns="http://www.w3.org/2000/svg">
-            <use xlink:href="images/icons/stack.svg#htmlacademy"></use>
-          </svg>
-        </a>
+        <div class="footer__copyright-inner">
+          <a href="https://htmlacademy.ru/intensive/adaptive" class="footer__copyright">
+            HTML Academy
+            <svg width="20" height="24" viewBox="0 0 20 24" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="images/icons/stack.svg#htmlacademy"></use>
+            </svg>
+          </a>
+        </div>
+
       </div>
     </div>
 

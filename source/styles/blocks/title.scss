@@ -6,3 +6,15 @@
   font-weight: 400;
   line-height: normal;
 }
+
+@media (min-width: $tablet-width) {
+  .title {
+    font-size: 48px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .title {
+    font-size: 52px;
+  }
+}
