@@ -12,6 +12,7 @@ import autoprefixer from 'autoprefixer';
 import csso from 'postcss-csso';
 import { createGulpEsbuild } from 'gulp-esbuild';
 import browserslistToEsbuild from 'browserslist-to-esbuild';
+import sharp from 'gulp-sharp-responsive';
 import svgo from 'gulp-svgmin';
 import { stacksvg } from 'gulp-stacksvg';
 import server from 'browser-sync';
@@ -101,6 +102,7 @@ export function optimizeRaster () {
   }
 
   return src(`${PATH_TO_RAW}images/**/*.{png,jpg,jpeg}`)
+    .pipe(sharp(createOptionsFormat()))
     .pipe(dest(`${PATH_TO_SOURCE}images`));
 }
 

@@ -13,12 +13,14 @@ img {
 
 body {
   font-family: $main-font;
-  font-size: 14px;
+  font-size: 16px;
   color: #000000;
-  line-height: 18px;
-  background-color: #ffffff;
+  line-height: 20px;
+  background-color: #FBFCFE;
   margin: 0;
   min-width: 320px;
+  display: flex;
+  flex-direction: column;
 }
 
 a {

@@ -1,0 +1,35 @@
+.social {
+  @include list;
+  display: grid;
+  grid-template-columns: repeat(3, 32px);
+  gap: 20px;
+}
+
+.social__link {
+  display: block;
+  width: 32px;
+  height: 32px;
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  mask-position: center;
+  background-color: $green;
+
+  &--telegram {
+    mask-image: url("../../images/icons/stack.svg#telegram");
+  }
+  &--vkontakte {
+    mask-image: url("../../images/icons/stack.svg#vkontakte");
+  }
+  &--youtube {
+    mask-image: url("../../images/icons/stack.svg#youtube");
+  }
+
+  &:hover,
+  &:focus-visible {
+    background-color: $focus;
+  }
+
+  &:active {
+    background-color: rgba(15, 128, 93, 0.50);
+  }
+}

@@ -1,0 +1,22 @@
+.news {
+  padding-top: 96px;
+  position: relative;
+  padding-bottom: 60px;
+
+  &::before {
+    @include pseudo;
+    width: 228px;
+    height: 32px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url("../../images/icons/stack.svg#line-leaf");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+.news__title {
+  margin-top: 0;
+  margin-bottom: 64px;
+}

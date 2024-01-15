@@ -1,0 +1,49 @@
+.footer__inner {
+  background-color: #F1F6FC;
+  padding-top: 11px;
+  padding-bottom: 20px;
+}
+
+.footer__copyright {
+  font-size: 11px;
+  line-height: normal;
+  color: #000000;
+  position: relative;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-right: 28px;
+  display: inline-block;
+  margin-left: auto;
+  margin-top: 10px;
+
+  svg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    fill: #000000;
+  }
+
+  &:hover,
+  &:focus-visible {
+    color: $focus;
+
+    svg {
+      fill: $focus;
+    }
+  }
+
+  &:active {
+    color: $active;
+
+    svg {
+      fill: $active;
+    }
+  }
+}
+
+.footer__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}

@@ -1,0 +1,60 @@
+.hero {
+  background-image: url("../../images/hero-background.jpg");
+  padding-top: 60px;
+  padding-bottom: 190px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  background-color: #d4dde6;
+}
+
+.hero__title {
+  margin-top: 0;
+  margin-bottom: 32px;
+}
+
+.hero__list {
+  @include list;
+  padding-left: 28px;
+  padding-right: 28px;
+  margin-bottom: 46px;
+}
+
+.hero__item {
+  position: relative;
+  padding-left: 44px;
+  min-height: 32px;
+  padding-bottom: 6px;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 12px;
+
+  &::before {
+    @include pseudo;
+    width: 32px;
+    height: 32px;
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+  }
+
+  &--leaf::before {
+    background-image: url("../../images/icons/stack.svg#leaf");
+  }
+
+  &--bike::before {
+    background-image: url("../../images/icons/stack.svg#bike");
+  }
+
+  &--snowflake::before {
+    background-image: url("../../images/icons/stack.svg#snowflake");
+  }
+}
+
+.hero__link {
+  width: 100%;
+  padding: 16px;
+}
+

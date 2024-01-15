@@ -2,13 +2,47 @@
   background-color: #F1F6FC;
 }
 
+.header__list {
+  @include list;
+  padding-top: 32px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 120px;
+  background-color: #F1F6FC;
+}
+
+.header__item {
+  margin-bottom: 32px;
+}
+
+.header__link {
+  color: #000;
+  font-size: 20px;
+  line-height: normal;
+
+  &:hover,
+  &:focus-visible {
+    color: $focus;
+  }
+
+  &:active {
+    color: $active;
+  }
+}
+
+.header__burger {
+  display: none;
+}
+
 @media (max-width: $mobile-width-only) {
   .header__burger {
     display: block;
     width: 60px;
     height: 60px;
     padding: 0;
-    position: relative;
+    position: absolute;
+    top: 4px;
+    right: 21px;
     border: none;
     background-color: transparent;
 
@@ -34,37 +68,63 @@
         top: 39px;
       }
     }
-  }
 
-  .header__burger--open {
-    span {
-      transition: transform 0.3s, top 0.3s;
-
-      &:nth-child(1) {
-        top: 10px;
-        transform: rotate(-45deg);
-      }
-
-      &:nth-child(2) {
-        top: 10px;
-        transform: rotate(-45deg);
-      }
-
-      &:nth-child(3) {
-        top: 10px;
-        transform: rotate(45deg);
+    &:hover,
+    &:focus-visible {
+      span {
+        background-color: #7BDB0A;
       }
     }
   }
 
-  .header__burger--no-js {
-    display: none;
-  }
-
   .header__wrapper {
     position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    padding: 8px 26px;
+    box-shadow: 0px 4px 4px 0px rgba(88, 13, 101, 0.25);
+    z-index: 2;
+  }
+
+  .header--close {
+    .header__list {
+      display: none;
+    }
+  }
+
+  .header--no-js {
+    .header__burger {
+      display: none;
+    }
+  }
+
+  .header--open {
+    .header__burger-line {
+      transition: transform 0.3s, top 0.3s;
+      width: 36px;
+      height: 3px;
+
+      &:nth-child(1) {
+        top: 27px;
+        transform: rotate(-45deg);
+      }
+
+      &:nth-child(2) {
+        top: 27px;
+        transform: rotate(-45deg);
+      }
+
+      &:nth-child(3) {
+        top: 27px;
+        transform: rotate(45deg);
+      }
+    }
+
+    .header__list {
+      position: absolute;
+      width: 100%;
+      left: 0;
+      top: 68px;
+    }
   }
 }
+
+
