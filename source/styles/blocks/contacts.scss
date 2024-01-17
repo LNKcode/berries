@@ -1,7 +1,7 @@
 .contacts {
   padding-top: 104px;
   position: relative;
-  padding-bottom: 60px;
+  padding-bottom: 59px;
 
   &::before {
     @include pseudo;
@@ -24,9 +24,14 @@
 .contacts__inner {
   padding-left: 26px;
   padding-right: 26px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .contacts__desc {
+  margin-bottom: 24px;
+
   p {
     text-align: center;
     font-size: 16px;
@@ -95,5 +100,73 @@
     &::after {
       background-color: $active;
     }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__inner {
+    max-width: 528px;
+  }
+
+  .contacts {
+    padding-top: 114px;
+    padding-bottom: 96px;
+
+    &::before {
+      width: 296px;
+      height: 42px;
+    }
+  }
+
+  .contacts__desc {
+    padding-left: 34px;
+    text-align: left;
+    margin-bottom: 40px;
+
+    p {
+      font-size: 20px;
+      line-height: normal;
+      text-align: left;
+    }
+  }
+
+  .contacts__link {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .contacts__title {
+    margin-bottom: 71px;
+  }
+
+  .contacts__list {
+    margin-top: 22px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__inner {
+    margin-left: 0;
+    margin-right: 0;
+    width: 550px;
+    padding: 0;
+    max-width: none;
+  }
+
+  .contacts__desc {
+    padding-left: 99px;
+  }
+
+  .contacts__container {
+    width: 1124px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .contacts {
+    padding-top: 141px;
+    padding-bottom: 80px;
   }
 }

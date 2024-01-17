@@ -3,8 +3,8 @@
   max-width: 348px;
   border: 2px solid $green;
   border-radius: 40px;
-  background-color: #FBFCFE;
-  padding: 32px 20px 72px;
+  background-color: #fbfcfe;
+  padding: 29px 18px 71px;
   position: relative;
 
   &::after {
@@ -48,5 +48,41 @@
 
   time {
     align-self: flex-end;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .news-card__title {
+    font-size: 28px;
+    margin-bottom: 24px;
+    min-height: 100px;
+  }
+
+  .news-card__desc {
+    font-size: 16px;
+    line-height: 20px;
+    min-height: 232px;
+  }
+
+  .news-card {
+    padding: 32px 34px 103px;
+
+    &::after {
+      width: 96px;
+      height: 40px;
+      bottom: 42px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .news-card {
+    max-width: none;
+    width: 360px;
+    padding-bottom: 104px;
+  }
+
+  .news-card__title {
+    min-height: 98px;
   }
 }

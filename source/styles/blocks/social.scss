@@ -17,9 +17,11 @@
   &--telegram {
     mask-image: url("../../images/icons/stack.svg#telegram");
   }
+
   &--vkontakte {
     mask-image: url("../../images/icons/stack.svg#vkontakte");
   }
+
   &--youtube {
     mask-image: url("../../images/icons/stack.svg#youtube");
   }
@@ -30,6 +32,26 @@
   }
 
   &:active {
-    background-color: rgba(15, 128, 93, 0.50);
+    background-color: rgba(15, 128, 93, 0.5);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .social__link {
+    width: 40px;
+    height: 40px;
+  }
+
+  .social {
+    grid-template-columns: repeat(3, 40px);
+    gap: 32px;
+    padding-left: 38px;
+    padding-top: 8px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .social {
+    padding-top: 0;
   }
 }

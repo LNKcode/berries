@@ -1,5 +1,5 @@
 .footer__inner {
-  background-color: #F1F6FC;
+  background-color: #f1f6fc;
   padding-top: 11px;
   padding-bottom: 20px;
 }
@@ -51,4 +51,43 @@
 .footer__copyright-inner {
   width: 100%;
   display: flex;
+}
+
+
+@media (min-width: $tablet-width) {
+  .footer__copyright-inner {
+    width: auto;
+  }
+
+  .footer__copyright {
+    font-size: 16px;
+    line-height: normal;
+    padding-bottom: 12px;
+    padding-right: 34px;
+
+    svg {
+      width: 26px;
+      height: 32px;
+    }
+  }
+
+  .footer__container {
+    padding-left: 20px;
+  }
+
+  .footer__inner {
+    padding-top: 27px;
+    padding-bottom: 22px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer__container {
+    padding-left: 36px;
+    padding-right: 39px;
+  }
+
+  .footer__inner {
+    padding-top: 24px;
+  }
 }

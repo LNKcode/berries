@@ -19,19 +19,21 @@
 
 .hero__list {
   @include list;
-  padding-left: 28px;
+  padding-left: 30px;
   padding-right: 28px;
-  margin-bottom: 46px;
+  margin-bottom: 60px;
 }
 
 .hero__item {
   position: relative;
+  font-size: 16px;
+  line-height: normal;
   padding-left: 44px;
   min-height: 32px;
   padding-bottom: 6px;
   display: flex;
   align-items: flex-end;
-  margin-bottom: 12px;
+  margin-bottom: 13px;
 
   &::before {
     @include pseudo;
@@ -66,7 +68,7 @@
   .hero {
     background-image: url("../../images/hero-background-tablet@1x.jpg");
     padding-top: 142px;
-    min-height: 902px;
+    min-height: 923px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../../images/hero-background-tablet@2x.jpg");
@@ -86,13 +88,13 @@
   .hero__list {
     padding-left: 0;
     padding-right: 40px;
-    font-size: 18px;
-    line-height: 22px;
-    margin-bottom: 29px;
+    margin-bottom: 49px;
   }
 
   .hero__item {
-    margin-bottom: 19px;
+    margin-bottom: 15px;
+    font-size: 18px;
+    line-height: 22px;
   }
 
   .hero__link {
@@ -107,8 +109,8 @@
 @media (min-width: $desktop-width) {
   .hero {
     background-image: url("../../images/hero-background-desktop@1x.jpg");
-    padding-top: 176px;
-    min-height: 801px;
+    padding-top: 172px;
+    min-height: 797px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../../images/hero-background-desktop@2x.jpg");
@@ -116,13 +118,13 @@
   }
 
   .hero__container {
-    padding-left: 450px;
+    padding-left: 421px;
   }
 
   .hero__list {
     padding-left: 23px;
     max-width: 530px;
-    margin-bottom: 33px;
+    margin-bottom: 55px;
   }
 
   .hero__link {

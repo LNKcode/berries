@@ -1,5 +1,8 @@
 .map {
   position: relative;
+  height: 372px;
+  text-align: center;
+
   img {
     position: absolute;
     top: 0;
@@ -9,6 +12,27 @@
 
   iframe {
     border: 0;
+    width: 100%;
   }
 }
 
+@media (min-width: $tablet-width) {
+  .map {
+    img {
+      width: 768px;
+      height: 372px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .map {
+    width: 552px;
+    height: 372px;
+
+    img {
+      width: 552px;
+      height: 372px;
+    }
+  }
+}

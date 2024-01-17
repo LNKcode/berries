@@ -1,7 +1,7 @@
 .news {
   padding-top: 96px;
   position: relative;
-  padding-bottom: 60px;
+  padding-bottom: 36px;
 
   &::before {
     @include pseudo;
@@ -19,4 +19,62 @@
 .news__title {
   margin-top: 0;
   margin-bottom: 64px;
+}
+
+.news__card {
+  margin: 0 auto;
+  margin-bottom: 24px;
+}
+
+@media (min-width: $tablet-width) {
+  .news__wrapper {
+    display: flex;
+    column-gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .news__card {
+    margin: 0;
+    margin-bottom: 34px;
+
+    &:last-child {
+      margin-right: 10px;
+    }
+  }
+
+  .news {
+    padding-top: 114px;
+    padding-bottom: 75px;
+
+    &::before {
+      width: 296px;
+      height: 42px;
+    }
+  }
+
+  .news__title {
+    margin-bottom: 71px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .news__wrapper {
+    column-gap: 24px;
+  }
+
+  .news {
+    padding-top: 140px;
+    padding-bottom: 65px;
+  }
+
+  .news__card {
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .news__title {
+    margin-bottom: 98px;
+  }
 }

@@ -3,14 +3,14 @@
   display: block;
   width: 52px;
   height: 52px;
-  color: #0F805D;
+  color: #0f805d;
 
   &::after {
     @include pseudo;
     width: 30px;
     height: 12px;
     mask-image: url("../../images/icons/stack.svg#list-logo");
-    background-color: #0F805D;
+    background-color: #0f805d;
     top: 4px;
     left: 11px;
     z-index: 1;
@@ -18,17 +18,18 @@
 
   &:hover,
   &:focus-visible {
-    color: #7BDB0A;
+    color: #7bdb0a;
 
     &::after {
-      background-color: #7BDB0A;
+      background-color: #7bdb0a;
     }
   }
 
   &:active {
-    color: rgba(15, 128, 93, 0.50);
+    color: rgba(15, 128, 93, 0.5);
+
     &::after {
-      background-color: rgba(15, 128, 93, 0.50);
+      background-color: rgba(15, 128, 93, 0.5);
     }
   }
 }
@@ -63,7 +64,7 @@
   .logo__text {
     position: absolute;
     top: 12px;
-    right: 0;
+    right: 2px;
   }
 
   .logo__img {
