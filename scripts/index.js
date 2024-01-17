@@ -1,0 +1,1 @@
+var e=document.querySelector(".header"),s=document.querySelector(".header__burger");e.classList.remove("header--no-js");e.classList.add("header--close");s.addEventListener("click",()=>{e.classList.contains("header--close")?(e.classList.remove("header--close"),e.classList.add("header--open")):(e.classList.add("header--close"),e.classList.remove("header--open"))});
